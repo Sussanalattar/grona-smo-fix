@@ -17,7 +17,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head><!-- Google Tag Manager -->
 
 
-<body><!-- Google Tag Manager (noscript) -->
+<body>
+<div style="margin: 60px; text-align: center;">
+<button id="cta-btn" style="padding: 15px 25px; font-size: 18px;">
+     Klicka här
+</button>
+</div>
+<script>
+   document.getElementById("cta-btn").addEventListener("click", function () {
+     window.dataLayer = window.dataLayer || [];
+     window.dataLayer.push({
+       event: "button_click"
+     });
+   });
+</script>
+</body><!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGJFXLWV"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) --><!-- Google Tag Manager (noscript) -->
